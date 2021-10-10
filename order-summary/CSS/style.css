@@ -1,0 +1,157 @@
+:root {
+  /* global roles  */
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+* {
+  /* global roles  */
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+body {
+  background: var(--Paleblue);
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  color: var(--Darkblue);
+}
+
+.container {
+  /* card space */
+  background-color: white;
+  width: 85%;
+  margin: 60px auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  /* content part */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 1.5em;
+  font-weight: 900;
+  padding: 15px;
+}
+
+main p {
+  font-size: 15px;
+  text-align: center;
+  padding: 0 10px 10px;
+  font-weight: 500;
+  color: var(--Desaturatedblue);
+}
+
+.plan-container {
+  /* Annual plan summary */
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--Verypaleblue);
+}
+
+.plan-container .plan-summary {
+  margin-left: -25px;
+}
+
+.plan-container div p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--Desaturatedblue);
+  padding: 0;
+  text-align: justify;
+}
+
+.proceed-btn {
+  /* btn */
+  font-size: 13px;
+  background: var(--Brightblue);
+  color: white;
+  width: 80%;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0px 15px 20px hsl(245, 70%, 51%, 0.25);
+}
+
+.cancel-btn {
+  margin: 20px 0 31px;
+  color: var(--Desaturatedblue);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.change-btn:hover {
+  text-decoration: none;
+  color: hsl(245deg 75% 52% / 64%);
+}
+
+.proceed-btn:hover {
+  background-color: hsl(245deg 75% 52% / 64%);
+}
+
+.cancel-btn:hover {
+  color: black;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 12px;
+}
+
+/* querries for a responsive website */
+@media (min-width: 576px) {
+  .container {
+    width: 51%;
+  }
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 40%;
+  }
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 30%;
+  }
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+}
