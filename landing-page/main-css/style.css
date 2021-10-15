@@ -10,7 +10,7 @@
 a {
   display: block;
   text-decoration:none;
-  color: inherit;
+  color: white;
 }
 :root {
   --violet: hsl(257, 40%, 49%);
