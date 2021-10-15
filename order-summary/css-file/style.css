@@ -9,7 +9,7 @@
 * {
   /* global roles  */
   font-family: "Red Hat Display", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -46,13 +46,13 @@ main {
 }
 
 main h1 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 900;
   padding: 15px;
 }
 
 main p {
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   padding: 0 10px 10px;
   font-weight: 500;
